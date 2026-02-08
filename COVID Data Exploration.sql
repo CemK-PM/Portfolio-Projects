@@ -1,3 +1,11 @@
+/*
+Covid 19 Data Exploration 
+
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
+*/
+
+
 SELECT * FROM [Portfolio Project]..CovidDeaths
 where continent is not null
 order by 3, 4
@@ -128,5 +136,6 @@ JOIN [Portfolio Project]..CovidVaccinations vac
 	AND dea.date = vac.date
 WHERE dea.continent IS NOT NULL
 --order by 2 ,3
+
 
 select * from PercentPopulationVaccinated
